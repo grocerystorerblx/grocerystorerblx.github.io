@@ -76,7 +76,7 @@ h4{
 }
 
 hr{
-  max-width: 700px;
+  max-width: 750px;
   border-style: solid;
 }
 
@@ -87,7 +87,13 @@ hr{
 }
 
 .article{
-  max-width: 700px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+#articles, #credits{
+  max-width: 850px;
+  background-color: #107743;
   margin: 0 auto;
 }
 
