@@ -86,7 +86,7 @@ hr{
   margin-right: auto;
 }
 
-.article, #credits-txt{
+.article, #credit-txt{
   max-width: 750px;
   margin: 0 auto;
 }
@@ -95,6 +95,7 @@ hr{
   max-width: 850px;
   background-color: #107743;
   margin: 0 auto;
+  padding-bottom: 5px;
 }
 
 .date{
