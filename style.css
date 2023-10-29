@@ -47,6 +47,7 @@ iframe{
   border: 5px solid white;
   border-radius: 15px;
   background-color: white;
+  aspect-ratio: 16 / 9;
 }
 
 h1 {
@@ -80,6 +81,7 @@ hr{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
 }
 
 .article, #credit-txt{
@@ -96,4 +98,12 @@ hr{
 
 .date{
   text-align: left;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 720px) {
+iframe{
+  width: 100%;
+  height: auto;
+}
 }
