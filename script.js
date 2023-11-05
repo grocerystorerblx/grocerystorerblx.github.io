@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 7, 2023").getTime();
+var countDownDate = new Date("Nov 7, 2023 15:00:00 GMT-0500").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -21,9 +21,10 @@ var x = setInterval(function() {
   document.getElementById("countdown").innerHTML = weeks + "w " + days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text
+  // If the count down is finished
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "The game releases today!";
+    document.getElementById("countdown").innerHTML = "0w 0d 0h 0m 0s";
+    document.getElementById('play').style.cssText = "display: block"; 
   }
 }, 1000);
