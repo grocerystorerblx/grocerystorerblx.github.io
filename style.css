@@ -73,7 +73,7 @@ iframe{
   aspect-ratio: 16 / 9;
 }
 
-#play{
+/*#play{
   display: none;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -81,7 +81,7 @@ iframe{
   max-width: 250px;
   background-color: #107743;
   color: white;
-}
+}*/
 
 hr{
   max-width: 750px;
