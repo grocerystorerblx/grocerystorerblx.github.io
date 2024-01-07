@@ -7,10 +7,12 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #7AE7C7;
+  background-color: #00C46B;
   background-image: url("https://grocerystorerblx.github.io/img/bg.png");
   background-repeat: repeat;
+  background-size: 1929px 1080px;
   text-align: center;
+  color: white;
 }
 
 nav{
