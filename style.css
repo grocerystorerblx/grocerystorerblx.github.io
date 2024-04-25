@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #00C46B;
-  background-image: url("https://grocerystorerblx.github.io/img/bg.png");
+  background-image: url("img/Untitled-1.png");
   background-repeat: repeat;
   background-size: 1920px 1080px;
   text-align: center;
@@ -107,7 +107,7 @@ hr{
 
 #articles, #credits{
   max-width: 850px;
-  background-color: #107743;
+  background-color: #11874b;
   margin: 0 auto;
   padding-bottom: 5px;
 }
