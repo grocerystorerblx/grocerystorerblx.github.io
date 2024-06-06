@@ -24,7 +24,78 @@
     </ul>
   </nav>
 
-  <iframe width="720" height="405" src="https://www.youtube.com/embed/OfDQD1vwsc4?si=hYtyXVJaSg7q_fpz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <script>
+
+document.addEventListener('keydown', (function() {
+    const wordToMatch = 'console';
+    let buffer = '';
+
+    return function(event) {
+        const key = event.key;
+
+        buffer += key;
+
+        if (buffer.length > wordToMatch.length) {
+            buffer = buffer.slice(-wordToMatch.length);
+        }
+
+        if (buffer === wordToMatch) {
+          document.getElementById("console").style.display = "block";
+
+            buffer = '';
+        }
+    };
+})());
+
+
+function boYo() {
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/Z-ap5Fp2T6c?si=kycaEyBmtn9ZAf-6&amp;autoplay=1");
+}
+
+function artIsDead() {
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/Eo9pU1q8sy8?si=siYtYQuWCJNiXa_5&amp;autoplay=1");
+}
+
+function comedy() {
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/6A6V36mWEAE?si=R-vldBpyJGdqaEwr&amp;autoplay=1");
+}
+
+function funnyFeeling() {
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/ObOqq1knVxs?si=DgQVAAHAdwW807yN&amp;autoplay=1");
+}
+function theChicken() {
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/NeOhV4zOxJ4?si=jszkVyo_JVjvVGqj&amp;autoplay=1");
+}
+
+function closeGUI(){
+  document.getElementById("console").style.display = "none";
+}
+  </script>
+
+  <div id="console" style="display: none; background-color: rgb(0, 116, 0); max-width: 300px; padding: 5px; padding-bottom: 5px; margin: 0 auto;">
+
+    <h3 style="margin-top: 5px; margin-bottom: 5px;">Replace Trailer Video</h3>
+   <!-- <input type="checkbox" id="bfdiMode" name="BFDI Mode">
+     <label for="setting1">BFDI Mode</label>
+
+    <br> -->
+
+    <button onclick="boYo()">I'm Bo Yo</button>
+    <br>
+    <button onclick="artIsDead()">Art is Dead</button>
+    <br>
+    <button onclick="comedy()">Comedy</button>
+    <br>
+    <button onclick="funnyFeeling()">That Funny Feeling</button>
+    <br>
+    <button onclick="theChicken()">The Chicken</button>
+    <br><br>
+    <button onclick="closeGUI()">Close</button>
+    <p>Note: Videos will autoplay on change and these changes will NOT be saved</p>
+
+  </div>
+
+  <iframe id="trailer" width="720" height="405" src="https://www.youtube.com/embed/OfDQD1vwsc4?si=hYtyXVJaSg7q_fpz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <h2>Countdown to Grocery Store 2's Release Date</h2>
 <!--<script src="https://grocerystorerblx.github.io/script.js"></script>!-->
 <h3 id="countdown">0w 0d 0h 0m 0s</h3>
