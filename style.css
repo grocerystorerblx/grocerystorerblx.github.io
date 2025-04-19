@@ -86,15 +86,16 @@ iframe{
   aspect-ratio: 16 / 9;
 }
 
-#play{
-  /*display: none;*/
-  margin: 0 auto;
-  margin-bottom: 50px;
+.play {
+  display: inline-block;
+  margin: 0 10px 50px 10px;
   padding: 10px;
   max-width: 175px;
   background-color: #107743;
   color: white;
-	border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
 }
 
 hr{
