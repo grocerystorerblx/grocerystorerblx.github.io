@@ -98,6 +98,14 @@ iframe{
   text-decoration: none;
 }
 
+.play a {
+  text-decoration: none;
+}
+
+.play a:hover {
+  text-decoration: underline;
+}
+
 hr{
   max-width: 750px;
   border-style: solid;
