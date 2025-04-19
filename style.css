@@ -8,7 +8,7 @@
   /* CSS HEX */
 --russian-violet: #462255ff;
 --delft-blue: #313b72ff;
---emerald: #00c46bff;
+--emerald: #2ecc71;
 --cal-poly-green: #0b4e2dff;
 --skobeloff: #1d7874ff;
 }
@@ -84,16 +84,17 @@ iframe{
   border-radius: 15px;
   background-color: white;
   aspect-ratio: 16 / 9;
+  box-shadow: 0 4px 12px --delft-blue;
 }
 
 .play {
   display: inline-block;
   margin: 0 10px 50px 10px;
-  padding: 10px;
+  padding: 15px;
   max-width: 175px;
   background-color: #107743;
   color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: center;
   text-decoration: none;
 }
