@@ -1,3 +1,5 @@
+//last updated
+
 getLastUpdated = async () => {
     const url = 'https://api.github.com/repos/grocerystorerblx/grocerystorerblx.github.io';
 
@@ -33,3 +35,55 @@ main = async () => {
 }
 
 main();
+
+// console
+
+document.addEventListener('keydown', (function() {
+    const wordToMatch = 'console';
+    let buffer = '';
+
+    return function(event) {
+        const key = event.key;
+
+        buffer += key;
+
+        if (buffer.length > wordToMatch.length) {
+            buffer = buffer.slice(-wordToMatch.length);
+        }
+
+        if (buffer === wordToMatch) {
+          document.getElementById("console").style.display = "block";
+
+            buffer = '';
+        }
+    };
+})());
+
+
+function boYo() {
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/Z-ap5Fp2T6c?si=kycaEyBmtn9ZAf-6");
+}
+
+function artIsDead() {
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/Eo9pU1q8sy8?si=siYtYQuWCJNiXa_5");
+}
+
+function expectations() {
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/llGvsgN17CQ?si=MK51kpZgfwO31lSl");
+}
+
+function comedy() {
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/6A6V36mWEAE?si=R-vldBpyJGdqaEwr");
+}
+
+function funnyFeeling() {
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/ObOqq1knVxs?si=DgQVAAHAdwW807yN");
+}
+
+function theChicken() {
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/NeOhV4zOxJ4?si=jszkVyo_JVjvVGqj");
+}
+
+function closeGUI(){
+  document.getElementById("console").style.display = "none";
+}
