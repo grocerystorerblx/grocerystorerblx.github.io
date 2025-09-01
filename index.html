@@ -2,120 +2,92 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-  <meta name="description" content="The official website for Store Storers">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Grocery Store - Home</title>
+  <link rel="stylesheet" href="styles.css" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="https://grocerystorerblx.github.io/img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://grocerystorerblx.github.io/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://grocerystorerblx.github.io/img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
+  <img id="logo" src="img/logo.png" />
+
   <nav>
     <ul>
-      <li><a href="https://grocerystorerblx.github.io/">Home</a></li>
-      <li><a href="https://grocerystorerblx.github.io/about">About</a></li>
-      <li><a href="https://grocerystorerblx.github.io/devlog">Dev Log</a></li>
-      <li><a href="https://grocerystorerblx.github.io/credits">Credits</a></li>
-      
+      <div class="nav-left">
+        <li><a href="/">Home</a></li>
+        <li><a href="blog">Blog</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="credits">Credits</a></li>
+      </div>
+      <div class="nav-right">
+        <a href="https://discord.gg/qHGBqHBHRD"><img src="img/discord.png" height="28px"></a>
+        <a href="https://x.com/CoffteaStudios"><img src="img/x.png" height="28px"></a>
+      </div>
     </ul>
   </nav>
 
-  <script>
 
-document.addEventListener('keydown', (function() {
-    const wordToMatch = 'console';
-    let buffer = '';
+  <h1>Latest Trailer</h1>
+  <iframe id="trailer" width="720" height="405" src="https://www.youtube.com/embed/blPT-hV4DrE"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen="" data-ruffle-polyfilled=""></iframe>
+  <br>
+  <h1>Our Games</h1>
 
-    return function(event) {
-        const key = event.key;
-
-        buffer += key;
-
-        if (buffer.length > wordToMatch.length) {
-            buffer = buffer.slice(-wordToMatch.length);
-        }
-
-        if (buffer === wordToMatch) {
-          document.getElementById("console").style.display = "block";
-
-            buffer = '';
-        }
-    };
-})());
-
-
-function boYo() {
-  document.getElementById("trailer").src=("https://www.youtube.com/embed/Z-ap5Fp2T6c?si=kycaEyBmtn9ZAf-6&amp;autoplay=1");
-}
-
-function artIsDead() {
-  document.getElementById("trailer").src=("https://www.youtube.com/embed/Eo9pU1q8sy8?si=siYtYQuWCJNiXa_5&amp;autoplay=1");
-}
-
-function comedy() {
-  document.getElementById("trailer").src=("https://www.youtube.com/embed/6A6V36mWEAE?si=R-vldBpyJGdqaEwr&amp;autoplay=1");
-}
-
-function funnyFeeling() {
-  document.getElementById("trailer").src=("https://www.youtube.com/embed/ObOqq1knVxs?si=DgQVAAHAdwW807yN&amp;autoplay=1");
-}
-
-function theChicken() {
-  document.getElementById("trailer").src=("https://www.youtube.com/embed/NeOhV4zOxJ4?si=jszkVyo_JVjvVGqj&amp;autoplay=1");
-}
-
-function guest999() {
-  document.getElementById("trailer").src=("https://www.youtube.com/embed/23Z_FcQUJNs?si=MK51kpZgfwO31lSl&amp;autoplay=1");
-}
-
-function closeGUI(){
-  document.getElementById("console").style.display = "none";
-}
-  </script>
-
-  <div id="console" style="display: none; background-color: rgb(0, 116, 0); max-width: 300px; padding: 5px; padding-bottom: 5px; margin: 0 auto;">
-
-    <h3 style="margin-top: 5px; margin-bottom: 5px;">Replace Trailer Video</h3>
-
-    <button onclick="boYo()">I'm Bo Yo</button>
-    <br>
-    <button onclick="artIsDead()">Art Is Dead</button>
-    <br>
-    <button onclick="comedy()">Comedy</button>
-    <br>
-    <button onclick="funnyFeeling()">That Funny Feeling</button>
-    <br>
-    <button onclick="theChicken()">The Chicken</button>
-    <br>
-    <button onclick="guest999()">Guest 999 Part 1</button>
-    <br><br>
-    <button onclick="closeGUI()">Close</button>
-    <p>Note: Videos will autoplay on change and these changes will NOT be saved</p>
-
+  <div id="games">
+    <div class="game">
+      <div class="game-box">
+        <img src="img/GS1.png" width="320px">
+        <h2>Grocery Store</h2>
+        <h4>Hm. Seems like you gotta go grocery shopping. NOTHING else is gonna happen on this perfectly average normal
+          trip to the grocery store!<br>...right?</h4>
+        <a href="https://www.roblox.com/games/10675702549/Grocery-Store-Restocked-Update">
+          <div class="play" style="margin-top: 55.5px"> <!-- theres probably a way better way to do this -->
+            <h2>Play GS1!</h2>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="game">
+      <div class="game-box">
+        <img src="img/GS2.jpg" width="320px">
+        <h2>Grocery Store 2</h2>
+        <h4>Another day, another trip to the grocery store. But this time, you're going to the grand Mall Mall to get
+          what you need. However, it seems you have bigger problems, as you somehow managed to lose the console. Eh, no
+          worries, just find it, get groceries, and get out.<br>...right?</h4>
+        <a href="https://www.roblox.com/games/12736147006/Grocery-Store-2">
+          <div class="play">
+            <h2>Play GS2!</h2>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 
-  <iframe id="trailer" width="720" height="405" src="https://www.youtube.com/embed/blPT-hV4DrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<!-- <h2 style="font-size: 28px;">Countdown to Finale Part 1</h2>
-<script src="https://grocerystorerblx.github.io/script.js"></script>
-<h2 id="countdown">COMING SOON!</h2>!-->
 
-<a href="https://www.roblox.com/games/10675702549/Grocery-Store-Restocked-Update">
-  <div class="play">
-    <h2>Play GS1!</h2>
-  </div>
-</a>
+  <script src="main.js"></script>
 
-<a href="https://www.roblox.com/games/12736147006/Grocery-Store-2">
-  <div class="play">
-    <h2>Play GS2!</h2>
-  </div>
-</a>
-
+  <h3 id="update"></h3>
 </body>
 
 </html>

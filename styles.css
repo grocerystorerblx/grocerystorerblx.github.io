@@ -1,0 +1,191 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #282828;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+#logo {
+  width: 320px;
+  /*border: white 5px solid;
+  border-radius: 20%;*/
+  margin: auto;
+  margin-top: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  margin-top: 16px;
+  background-color: #107743;
+  max-width: 720px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  height: 56px;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-left li {
+  list-style: none;
+}
+
+.nav-left li a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-left li a:hover {
+  background-color: #0c8346;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav img {
+  max-height: 24px;
+}
+
+iframe {
+  display: block;
+  margin: 25px auto;
+  border: 5px solid white;
+  border-radius: 15px;
+  background-color: white;
+  aspect-ratio: 16 / 9;
+  box-shadow: 0 4px 12px green;
+}
+
+#games, #blogs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#blogs {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.game-box, .blog-box {
+  border: 5px solid white;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  width: 320px;
+}
+
+.blog-box {
+  height: 428px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+
+}
+
+.blog-box h2 {
+  margin: 10px 0 5px;
+}
+
+.blog-box h4 {
+  margin: 0 15px 10px;
+  flex-grow: 1;
+}
+
+.blog-box p {
+  text-align: left;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+
+.game-box {
+  height: 700px;
+}
+
+.blog-box {
+  width: 320px;
+  height: 428px;
+}
+
+.play {
+  display: inline-block;
+  margin: 0 10px 50px 10px;
+  padding: 7px;
+  max-width: 175px;
+  background-color: #107743;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.play a, .blog a {
+  text-decoration: none;
+  color:white;
+}
+
+.play a:hover {
+  text-decoration: underline;
+}
+
+.article {
+  max-width: 850px;
+  background-color: #424242;
+  margin: 0 auto;
+  padding: 6px;
+}
+
+.article h1 {
+  font-size: 64px;
+}
+
+.article img {
+  max-width: 650px;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 720px) {
+  nav {
+    max-width: 100vw;
+  }
+
+  .nav-right img{
+    width: 22px;
+    height: 100%;
+  }
+
+  iframe{
+    width: 100%;
+    height: auto;
+}
+}
+
+@media only screen and (max-width: 650px) {
+  .article img {
+    max-width: 100%;
+}
+}
