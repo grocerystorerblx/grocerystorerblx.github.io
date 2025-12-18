@@ -68,9 +68,8 @@ function artIsDead() {
 }
 
 function what() {
-  document.getElementById("trailer").src=("https://www.youtube.com/embed/ejc5zic4q2A?si=siYtYQuWCJNiXa_5");
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/ejc5zic4q2A?si=9vAXtQ87oOSmXmS1");
 }
-
 
 function expectations() {
   document.getElementById("trailer").src=("https://www.youtube.com/embed/llGvsgN17CQ?si=MK51kpZgfwO31lSl");
