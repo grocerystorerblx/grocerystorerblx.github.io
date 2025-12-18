@@ -1,5 +1,3 @@
-//last updated
-
 getLastUpdated = async () => {
     const url = 'https://api.github.com/repos/grocerystorerblx/grocerystorerblx.github.io';
 
@@ -36,6 +34,7 @@ main = async () => {
 
 main();
 
+
 // console
 
 document.addEventListener('keydown', (function() {
@@ -67,6 +66,11 @@ function boYo() {
 function artIsDead() {
   document.getElementById("trailer").src=("https://www.youtube.com/embed/Eo9pU1q8sy8?si=siYtYQuWCJNiXa_5");
 }
+
+function what() {
+  document.getElementById("trailer").src=("https://www.youtube.com/embed/ejc5zic4q2A?si=siYtYQuWCJNiXa_5");
+}
+
 
 function expectations() {
   document.getElementById("trailer").src=("https://www.youtube.com/embed/llGvsgN17CQ?si=MK51kpZgfwO31lSl");
